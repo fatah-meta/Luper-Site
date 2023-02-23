@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+.main-box{
+    display: flex;
+    height: 100vh;
+}
+.left-side {
+    background-color: black;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    flex-grow: 2;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vh;
+    margin-top: 50px;
+}
+.banner {
+    display: flex;
+    width: fit-content;
+}
+h3 {
+    color: white;
+    margin-top: 4vh;
+    letter-spacing: 4px;
+}
+label {
+    color: white;
+}
+form {
+    width: 80%;
+    margin:5vh 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+input {
+    outline: 1px solid white;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    height: 4vh;
+}
+input:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+.log-in {
+    width: 100%;
+    border: 1px white solid;
+    background-color: orange;
+    color: white;
+    height: 4vh;
+    cursor: pointer;
+}
+.log-in:hover {
+    background-color: rgba(255, 165, 0, 0.6);
+}
+.opt {
+    margin: 0 4.5vh;
+    width: 80%;
+    display: block;
+    text-align: center;
+    height: fit-content;
+    line-height: 0.3;
+}
+.rule {
+    width: 100px;
+    height: 1px;
+    background-color: white;
+}
+.in-line {
+    display: flex;
+    justify-content: center;
+}
+.create {
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+    cursor: pointer;
+}
+.create:hover {
+    transform: scale(1.1, 1.1);
+    background-color: orangered;
+}
+footer {
+    display: block;
+    margin: 5vh auto;
+    font-size: 12px;
+}
+a {
+    color: red;
+    margin: 2vh 10px;
+}
+a:hover {
+    color: white;
+}
+.right-side {
+    height: 100vh;
+    background: url('back-cover.jpg'), powderblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 4;
+}
+.right-title {
+    display: block;
+    margin: 40vh auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+}
+.free-trial {
+    background-color: transparent;
+    border: 1px white solid;
+    color: black;
+    width: 100%;
+    height: 4vh;
+}
+.free-trial:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+@media screen and (max-width: 1200px){
+    .right-side {
+        flex-grow: 1;
+        justify-content: flex-start;
+    }
+    .left-side {
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+    .left {
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 800px){
+    .main-box {
+        display: block;
+        margin: 0;
+    }
+    .right-side{
+        display: none;
+    }
+}
+
